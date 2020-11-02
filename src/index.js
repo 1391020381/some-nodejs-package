@@ -1,3 +1,4 @@
-require('dotenv').config()
+const { DB_HOST,DB_USER,DB_PASS } = require('./config')
 
-console.log(process.env.DB_HOST,process.env.DB_USER,process.env.DB_PASS)
+
+console.log(DB_HOST,DB_USER,DB_PASS)
