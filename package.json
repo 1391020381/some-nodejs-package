@@ -4,7 +4,7 @@
   "description": "nodejs开发过程中常见包的使用",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dotenv:r": "node -r ./src/env.js ./src/r.js"
   },
   "repository": {
     "type": "git",
