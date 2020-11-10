@@ -19,8 +19,8 @@ const logger = createLogger({
             filename:path.join(__dirname,'../logs/quick-start-error.log'),
             level:'error'
         }),
-        new transports.File({ filename:path.join(__dirname,'quick-start-combined.log'),
-        level:'info'
+        new transports.File({ filename:path.join(__dirname,'../logs/quick-start-combined.log'),
+        
     })
     ]
 })

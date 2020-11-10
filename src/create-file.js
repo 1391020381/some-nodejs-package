@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const winston = require('winston');
 
-const filename = path.join(__dirname, 'created-logfile.log');
+const filename = path.join(__dirname, '../logs/created-logfile.log');
 
 //
 // Remove the file, ignoring any errors
