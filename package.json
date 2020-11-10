@@ -8,12 +8,13 @@
     "express": "^4.17.1",
     "finalhandler": "^1.1.2",
     "morgan": "^1.10.0",
+    "node-uuid": "^1.4.8",
     "nodemon": "^2.0.6",
     "rotating-file-stream": "^2.1.3"
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "nodemon src/log-file-totation.js"
+    "dev": "nodemon src/custom-token-formats.js"
   },
   "repository": {
     "type": "git",
