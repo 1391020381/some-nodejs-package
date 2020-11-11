@@ -1,4 +1,5 @@
 const path = require('path')
+const os = require('os')
 const { createLogger,format,transports, level,  } = require("winston")
 require('winston-daily-rotate-file')
 
@@ -14,7 +15,8 @@ const logger  = createLogger({
         format.json()
     ),
     defaultMeta:{
-        service:'simple-winston'
+        app:'node-pc',
+        service:os.hostname()
     },
     transports:[
         new transports.DailyRotateFile({
