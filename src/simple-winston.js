@@ -1,12 +1,21 @@
 const path = require('path')
 const os = require('os')
 const { createLogger,format,transports, level,  } = require("winston")
+const session = require('./session')
 require('winston-daily-rotate-file')
+
+
+const requestId = format((info) => {
+    // 每次自动获取 requestId
+    info.requestId = session.get('requestId')
+    return info
+  }) 
 
 const logger  = createLogger({
     level:'info',
     exitOnError:false,
     format:format.combine(
+        requestId(),
         format.timestamp({
             format:'YYYY-MM-DD HH:mm:ss'
         }),
@@ -56,4 +65,6 @@ const logger  = createLogger({
         })
     ]
 })
+
+
 module.exports = logger

@@ -9,6 +9,16 @@
             "date": 1605076239700,
             "name": "C:\\own-project\\some-nodejs-package\\logs\\exceptionhandle-2020-11-11-14.log",
             "hash": "7e5c5201692e35341d876d2a9a0a2277"
+        },
+        {
+            "date": 1605078213366,
+            "name": "C:\\own-project\\some-nodejs-package\\logs\\exceptionhandle-2020-11-11-15.log",
+            "hash": "b6956581b06aa8bec9be0147a0cd8f6b"
+        },
+        {
+            "date": 1605081600833,
+            "name": "C:\\own-project\\some-nodejs-package\\logs\\exceptionhandle-2020-11-11-16.log",
+            "hash": "cff9d999e331d5d5ebe6e23567402e6d"
         }
     ]
 }

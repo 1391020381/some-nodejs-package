@@ -3,16 +3,18 @@ const util = require('util')
 const fs = require('fs')
 const readFile = util.promisify(fs.readFile)
 const logger = require("./simple-winston.js")
+const createRequestId = require("./session-middleware")
 
 const app = express()
 
+app.use(createRequestId)
 app.use(function(req,res,next){
     logger.info(req.url)
     next()
 })
 app.use('/',function(req,res){
     // setTimeout(function(){
-    //     console.log(mmmmmmmmmmmmmmmmmmmmmmmmmmm)
+    //     mmmmmmmmmmmmmmmmmmmmmmmmmmm
     // })
     readFile('./xxxxxxxxxxxxxxxx').then(data=>{
         console.log(data)
