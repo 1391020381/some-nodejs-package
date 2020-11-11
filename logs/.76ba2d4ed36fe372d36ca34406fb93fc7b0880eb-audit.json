@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\own-project\\some-nodejs-package\\logs\\.76ba2d4ed36fe372d36ca34406fb93fc7b0880eb-audit.json",
+    "files": [
+        {
+            "date": 1605076325103,
+            "name": "C:\\own-project\\some-nodejs-package\\logs\\application-rejectionpromsie-2020-11-11-14.log",
+            "hash": "9260785c952aa8eeab917c32bbec982b"
+        }
+    ]
+}

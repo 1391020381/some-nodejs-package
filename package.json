@@ -5,12 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "bunyan": "^1.8.14",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "winston": "nodemon ./src/simple-express.js"
   },
   "repository": {
     "type": "git",
