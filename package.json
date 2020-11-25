@@ -1,0 +1,28 @@
+{
+  "name": "some-nodejs-package",
+  "version": "1.0.0",
+  "description": "nodejs开发过程中常见包的使用",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1391020381/some-nodejs-package.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1391020381/some-nodejs-package/issues"
+  },
+  "homepage": "https://github.com/1391020381/some-nodejs-package#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
