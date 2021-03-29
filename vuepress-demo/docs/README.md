@@ -1,6 +1,8 @@
 ---
 home: true
 heroImage: /logo.jpg
+heroText: Senior-FrontEnd-Road
+tagline:  justdoit
 actionText: 快速上手 →
 actionLink: /guide/
 features:
