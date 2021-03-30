@@ -1,6 +1,7 @@
 module.exports = {
     title: "Senior-FrontEnd-Road",
     description: 'Hello, my friend,justdoit!',
+    base: '/some-nodejs-package/',
     themeConfig: {
         lastUpdated: 'Last Updated',
         displayAllHeaders: true,
