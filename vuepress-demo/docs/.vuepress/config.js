@@ -1,5 +1,6 @@
 module.exports = {
     title: "Senior-FrontEnd-Road",
+    description: 'Hello, my friend,justdoit!',
     themeConfig: {
         lastUpdated: 'Last Updated',
         displayAllHeaders: true,
@@ -37,6 +38,31 @@ module.exports = {
             },
             { text: 'GitHub', link: 'https://github.com/1391020381' }
         ],
-        sidebar: 'auto'
+        sidebar: [
+            {
+                title: '指南',
+                collapsable: false,
+                children: [
+                    ["guide/", '介绍']
+                ]
+            },
+            {
+                title: 'JavaScript基础',
+                collapsable: false,
+                children: [
+                    ['notes/javascript/', '前言'],
+                    ['notes/javascript/prototype', '原型原型链作用域']
+                ]
+            },
+            {
+                title: 'Node.js进阶',
+                collapsable: false,
+                children: [
+                    ['notes/node/', 'Node.js基础'],
+                    ['notes/node/express', 'Express'],
+                    ['notes/node/koa', 'Koa']
+                ]
+            }
+        ]
     }
 }
