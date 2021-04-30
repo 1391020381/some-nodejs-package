@@ -16,6 +16,7 @@ describe('ishare-主站',()=>{
     cy.get('.search-result .current')
       .should('contain','综合')  
       cy.get('.search-result .screen-ele:nth-of-type(2)').click()
-      cy.get('.landing-txt-list li:nth-child(1) .sts_8').click()
+      cy.get('#unLogin').click({force: true,waitForAnimations: false})
+      // cy.get('.landing-txt-list li:nth-child(1) .sts_8').click()
     })
 })
