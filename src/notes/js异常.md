@@ -68,3 +68,16 @@ window.addEventListener('error', args => {
 
 
 ```
+
+# 信息上报
+* 通过 动态创建 img标签 其实上报就是要将捕获的异常信息发送到后端。最常用的方式首推动态创建标签方式。因此这种方式无效加载任何通讯库,而且页面是无刷新的。`基本上目前包括百度统计 Google统计都是基于这个原理做的埋点`
+
+
+* new Image().src = 'http://localhost:7001/monitor/error'+ '?info=xxxxxx'
+
+
+# 上报数据序列化
+1. 将异常数据从属性中解构出来存入一个JSON对象
+2. 将JSON对象转换为字符串
+3. 将字符串转换为Base64
+
